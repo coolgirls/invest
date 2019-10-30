@@ -1,0 +1,40 @@
+/* pages/detail/detail.wxss */
+page{
+  background: #f2f3f4;
+  color: #101010;
+  font-size: 14px;
+}
+
+.detail-top{
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.items{
+  border-bottom: 1px solid #eaebec;
+  margin: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.detail-top .items:last-child{
+  border-bottom: 0;
+}
+
+.item-right{
+  color: #999;
+}
+
+.detail-bot{
+  background: #fff;
+  overflow: hidden;
+}
+
+.pic{
+ margin: 15px;
+}
+.pic image{
+  width: 120px;
+  height: 80px;
+}

@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="userInfo">
+   <view class='info-item'>
+      <view class="item-left">档案标号</view>
+      <view class="item-right">{{infos.RecordCode}}
+      </view>
+   </view>
+   <view class='info-item'>
+      <view class="item-left">电话</view>
+      <view class="item-right">{{infos.CusPhone}}
+      </view>
+   </view>
+   <view class='info-item'>
+      <view class="item-left">投资份额（￥）</view>
+      <view class="item-right">{{infos.SumAmount}}
+      </view>
+   </view>
+   <view class='info-item'>
+      <view class="item-left">总收益（￥）</view>
+      <view class="item-right">{{infos.SumTotalEarning}}
+      </view>
+   </view>
+    <navigator url='../list/list' class='info-item'>
+      <view class="item-left">投资次数</view>
+      <view class="item-right">
+        <text>{{infos.InvestNum}}</text>
+        <image src='../../image/right.png'></image>
+      </view>
+    </navigator>
+    <view class="loginOut" bindtap='loginOut'>退出</view>
+</view>

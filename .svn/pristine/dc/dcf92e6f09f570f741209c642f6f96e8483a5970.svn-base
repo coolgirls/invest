@@ -1,0 +1,41 @@
+<!--pages/detail/detail.wxml-->
+<view class='detail'>
+   <view class='detail-top'>
+     <view class='items'>
+        <view class='item-left'>合同成立日期</view>
+        <view class='item-right'>{{details.ContractDate}}</view>
+     </view>
+     <view class='items'>            
+        <view class='item-left'>投资项目名称</view>
+        <view class='item-right'>{{details.ItemName}}</view>
+     </view>
+     <view class='items'>
+        <view class='item-left'>投资期限</view>
+        <view class='item-right'>{{details.InvestPeriod}}</view>
+     </view>
+     <view class='items'>
+        <view class='item-left'>投资金额</view>
+        <view class='item-right'>{{details.Amount}}</view>
+     </view>
+     <view class='items'>
+        <view class='item-left'>到期效益率</view>
+        <view class='item-right'>{{details.EarningRate}}</view>
+     </view>
+     <view class='items'>
+        <view class='item-left'>到期效益（元）</view>
+        <view class='item-right'>{{details.TotalEarning}}</view>
+     </view>
+   </view>
+   <view class='detail-bot'>
+     <view class='items'>
+        <view class='item-left'>资金去向</view>
+        <view class='item-right'>{{details.FundsFlow}}</view>
+     </view>
+     <view class='pic'>
+        <block wx:if="{{details.TicketUrl!=null}}">
+           <image src="http://110.fonery.cn:2333{{details.TicketUrl}}" mode="scaleToFill"></image>
+        </block>
+        <block wx:else>暂无图片</block>
+     </view>
+   </view>
+</view>

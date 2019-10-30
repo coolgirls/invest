@@ -1,0 +1,38 @@
+/**index.wxss**/
+page{
+  background: #f2f3f4;
+  font-size: 14px;
+}
+
+.info-item{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  padding: 20px 12px;
+}
+
+.info-item .item-left{
+  color: #666;
+}
+
+.item-right{
+  display: flex;
+  align-items: center;
+  color: #999;
+}
+
+.item-right image{
+  width: 24px;
+  height: 24px;
+}
+
+.loginOut{
+  background: #0ac4ff;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 80%;
+  margin: 30px auto;
+}

@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login",
+    "pages/list/list",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0ac4ff",
+    "navigationBarTitleText": "投资理财",
+    "navigationBarTextStyle":"white"
+  }
+}

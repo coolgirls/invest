@@ -1,0 +1,16 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+   <view class="login-bg">
+    <image src='../../image/beijing.png' mode='scaleToFill' class="bg"></image>
+    <image src='../../image/logo.png' mode='scaleToFill' class="logo"></image>
+  </view>
+   <view class="login-item">
+       <view class="list-item">
+          <input type="text" placeholder='请输入账号' bindinput="bindAccout" value='{{username}}'></input>
+       </view>
+       <view class="list-item">
+          <input type="text" password placeholder='请输入密码'  bindinput="bindPass" value="{{password}}"></input>
+       </view>
+   </view>
+   <view class="login-btn" bindtap="goLogin">登录</view>
+</view>

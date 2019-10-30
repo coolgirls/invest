@@ -1,0 +1,14 @@
+<!--pages/list/list.wxml-->
+<view class='list'>
+   <view class='list-item' wx:for="{{lists}}" bindtap='goDetail' data-id='{{item.ID}}'>
+      <view class='item-left'>
+         <view class='time'>投资日期：{{item.ContractDate}}</view>
+         <view class='item-title'>投资项目：{{item.ItemName}}</view>
+         <view class='item-time'>投资期限：{{item.InvestPeriod}}</view>
+      </view>
+      <view class='item-right'>
+         <view class='income'>总收益</view>
+         <view class='price'>{{item.TotalEarning}}</view>
+      </view>
+   </view>
+</view>
